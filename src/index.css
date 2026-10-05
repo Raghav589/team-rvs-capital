@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ink-50 text-ink-800 antialiased;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* meesho.com look: 8px radius, hairline #EAEAF2 borders, flat surfaces, #9F2089 actions. */
+@layer components {
+  .card {
+    @apply rounded-lg border border-ink-200 bg-white;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-bold transition disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-ghost {
+    @apply btn border border-brand-600 bg-white text-brand-600 hover:bg-brand-50;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-bold;
+  }
+  .label {
+    @apply text-xs font-bold uppercase tracking-wide text-ink-600;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Meesho product-card pieces */
+  .rating-pill {
+    @apply inline-flex items-center gap-0.5 rounded-full bg-emerald-600 px-2 py-0.5 text-xs font-bold text-white;
+  }
+  .off-text {
+    @apply text-sm font-bold text-emerald-600;
+  }
+  .strike {
+    @apply text-sm text-ink-400 line-through;
+  }
+  .free-del {
+    @apply inline-block rounded-full bg-ink-100 px-2 py-0.5 text-[11px] font-bold text-ink-600;
+  }
+}
+
+input[type='range'] {
+  accent-color: #9f2089;
+}

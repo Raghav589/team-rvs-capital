@@ -1,0 +1,232 @@
+{
+ "defaults": {
+  "annualOrders": 286.8,
+  "aov": 265.75,
+  "annualNmv": 46456,
+  "codShare": 0.8,
+  "rtoRateCod": 0.2,
+  "rtoRatePrepaid": 0.05,
+  "rtoBasis": "placed",
+  "shippedShare": 0.8,
+  "costFmHubCarting": 6,
+  "costFmSorting": 5,
+  "costLineHaul": 8,
+  "costRegional": 10,
+  "costLastMile": 21,
+  "attemptsToday": 3,
+  "cappedShare": 0.4,
+  "cappedAttempts": 2,
+  "sellerBackShare": 0.3,
+  "acquisitionDiscount": 0.12,
+  "sellerFloorDiscount": 0.15,
+  "flashClearance": 0.4,
+  "flashDiscount": 0,
+  "ladderDiscounts": [
+   0.15,
+   0.25,
+   0.35,
+   0.45
+  ],
+  "weeklySellThrough": 0.5,
+  "floorLadderSteps": [
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "floorSellThrough": 0.35,
+  "floorReference": 0.15,
+  "floorSellThroughSlope": 1,
+  "salvageRate": 0.35,
+  "localDelivery": 21,
+  "selfCollectShare": 0.5,
+  "handling": 15,
+  "commission": 20,
+  "rentPerSqftMonth": 25,
+  "parcelsPerSqft": 8,
+  "platformRevenue": 47,
+  "platformFee": 47,
+  "consignmentSalvageFee": 0
+ },
+ "annualInputs": {
+  "valmoShare": 0.5,
+  "eligible": 0.85,
+  "incremental": 0.5,
+  "thirdAttemptSuccess": 0.2,
+  "collectAfterCap": 0.5,
+  "discount": 0.12,
+  "kiranasPerPincode": 7
+ },
+ "base": {
+  "inputs": {
+   "valmoShare": 0.5,
+   "eligible": 0.85,
+   "incremental": 0.5,
+   "thirdAttemptSuccess": 0.2,
+   "collectAfterCap": 0.5,
+   "discount": 0.12,
+   "kiranasPerPincode": 7
+  },
+  "rtoRate": 0.17000000000000004,
+  "shipped": 229.44000000000003,
+  "shippedValmo": 114.72000000000001,
+  "rto": 19.502400000000005,
+  "pool": 11.603928000000002,
+  "optIn": 0.7,
+  "flash": 0.39803819206968205,
+  "resoldShare": 0.9837229527135642,
+  "lines": {
+   "tripBack": 336.51391200000006,
+   "flashCharge": 217.08390653525782,
+   "flashDiscount": 146.64710707434972,
+   "flashLocal": -92.37613044053525,
+   "boughtNet": 21.585241854622467,
+   "ops": -34.811784,
+   "notIncremental": -268.25368240803675
+  },
+  "net": 326.38857061565807,
+  "perRto": 16.735815623495466,
+  "perOffered": 28.12742121595877,
+  "outcomes": {
+   "deliveredTodayPct": 0.83,
+   "deliveredNewPct": 0.83,
+   "deliveredWithCapPct": 0.8215,
+   "returnedPctOfRto": 0.405,
+   "resoldPctOfRto": 0.5853151568645707,
+   "bulkPctOfRto": 0.0096848431354293
+  },
+  "perPointCr": 116.17027231672601,
+  "kirana": {
+   "rtoPerPincodeDay": 35.62082191780823,
+   "offeredPerPincodeDay": 21.194389041095896,
+   "holdsPerDay": 1.8226018207366574,
+   "pickupsPerDay": 1.6551365726139406,
+   "heldPickupsPerDay": 1.0525525514754197,
+   "flashPickupsPerDay": 0.6025840211385208,
+   "stockPerKirana": 21.05105102950839,
+   "soldAtKiranaPct": 0.5775,
+   "monthly": 1632.4775565583038
+  },
+  "capTest": {
+   "capped": 7.800960000000003,
+   "reachThird": 9.751200000000003,
+   "wouldDeliver": 1.9502400000000006,
+   "lostDeliveries": 0.9751200000000003,
+   "fewerAttempts": 163.82016000000004,
+   "lostSales": -45.83064000000002,
+   "net": 117.98952000000003
+  }
+ },
+ "jhumka": {
+  "margin": {
+   "fromWholesale": 0.42953020134228187,
+   "fromSignals": 0.555,
+   "parts": [
+    {
+     "label": "Typical jewellery margin",
+     "value": 0.5
+    },
+    {
+     "label": "Priced above similar listings",
+     "value": 0.025000000000000022
+    },
+    {
+     "label": "Buys it to resell",
+     "value": -0.06
+    },
+    {
+     "label": "Has run discounts up to 30%",
+     "value": 0.09
+    }
+   ],
+   "margin": 0.47971812080536913,
+   "band": "high",
+   "cap": 0.15
+  },
+  "fee": 47,
+  "flash": 0.6272788427367146,
+  "normalPayout": 102,
+  "fastSeller": true,
+  "ask": 0.15,
+  "minDiscount": 0.03,
+  "worthBuying": true,
+  "sellerWalkAway": 75.15941917808219,
+  "sellerMax": 0.18,
+  "consignNet": 19.796623367586296,
+  "returnNet": -29,
+  "d": 0.15,
+  "minVsReturn": 0,
+  "atZero": 8.141095465797406,
+  "zeroOffer": true,
+  "stages": [
+   {
+    "key": "kirana",
+    "label": "Kirana, same pincode",
+    "when": "Weeks 1–2",
+    "discount": 0.1,
+    "share": 0.2152464683195473
+   },
+   {
+    "key": "city",
+    "label": "Whole city",
+    "when": "Week 3",
+    "discount": 0.1,
+    "share": 0.09448481336624283
+   },
+   {
+    "key": "india",
+    "label": "Anywhere in India",
+    "when": "Weeks 4–5",
+    "discount": 0.15,
+    "share": 0.052911495485095994
+   },
+   {
+    "key": "bulk",
+    "label": "Bulk to local resellers",
+    "when": "After week 5",
+    "discount": 0.65,
+    "share": 0.010078380092399239
+   }
+  ],
+  "tail": 32.63091403470595,
+  "capital": 0.8602115506849314,
+  "heldDays": 16.35298,
+  "sellerNow": 80,
+  "sellerIfFlash": 102,
+  "sellerAfterAvg": 93.80013454020772,
+  "meesho": {
+   "today": -29,
+   "consign": 15.22842626074451,
+   "buyAfter": 16.429131162871883,
+   "buyBefore": 30.229265703079605
+  },
+  "keepsOnFlash": {
+   "before": 49,
+   "after": 27
+  }
+ },
+ "averageOrder": {
+  "today": -29,
+  "consign": 5.528183182039749,
+  "buyAfter": 9.60719800651512,
+  "buyBefore": 22.24491060472753
+ },
+ "fiveYears": {
+  "scale": [
+   0.22999999999999998,
+   0.727375,
+   1.2927437499999999,
+   1.7490062499999994,
+   2.0113571874999994
+  ],
+  "net": [
+   75.06937124160135,
+   237.4068865515643,
+   421.93678473482555,
+   570.8556499353522,
+   656.4839974256549
+  ],
+  "total": 1961.7526898889982
+ },
+ "downside": 59.02458506466408
+}
